@@ -1,0 +1,56 @@
+.grid-container  { 
+    display: grid;
+    gap: 10px;
+    background-color: blueviolet;
+    padding:10px;
+}    
+
+.grid-item {
+    background-color: yellowgreen;
+    text-align: center;
+    padding: 20px;   
+    font-size: 30px; 
+ }
+
+ .item1{ 
+    grid-column: 1/ span 2; 
+    /*primera columna, se expande por dos columnas*/
+    grid-row: 1; 
+    /*el elemento se coloca en la primera fila de la cuadricula*/
+ }
+
+ .item2 { 
+    grid-column: 3;
+    /*ocupa la 3ra columna*/
+    grid-row: 1 /span 2; 
+    /*ocupa 2 filas a partir de la 1ra columna */
+}   
+
+.item5 { 
+    grid-column: 1 /span 3;
+    /*ocupa 3 columnas consecutivas a partir de la 1ra columna*/
+    grid-row: 3; 
+    /*ocupa la 3ra fila*/
+}
+
+.button { 
+    /*https://uiverse.io/buttons*/
+    background-color: blue;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 15px;
+    position: fixed; /*mantiene fijo el elemento, se sobrepone, siempre a la mano*/
+    /*position: relative; = respeta la posición de los elementos*/
+    /*position: absolute; = quita el elemento de flujo normal donde las propiedades pueden ser establecidas*/
+    /*position: sticky; = posición variable fija, deja de ser fija hasta cuando llega a otro elemento*/
+    /*position: static; = viene por defecto*/
+    top: 10px;
+    left: 10px;
+}
+
+/*DISEÑO RESPONSIVE: Media Queries
+max: rango de la pantalla
+min: rango de la pantalla
+Estructura: @media (max-width: 375px) {.class-que-quiero-que-cambie} propiedad: valor;
+*/
