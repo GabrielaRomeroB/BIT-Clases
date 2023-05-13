@@ -1,0 +1,28 @@
+/*Media Queries
+max: rango de la pantalla
+min: rango de la pantalla
+Estructura: @media (max-width: 375px) {.class-que-quiero-que-cambie} propiedad: valor;
+*/
+
+.container{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 25 px = 2.5 rem (el rem mantiene el numero de fuente, util para textos*/
+h1{ 
+    font-size: 30px;
+    font-weight: bold;
+    color: #e76dff;
+}
+@media (max-width: 600px) { /*toma de 600 px para abajo*/
+    h1{
+        font-size: 15px;
+     }
+
+     p{ 
+        font-size: 10px;
+     }
+}
