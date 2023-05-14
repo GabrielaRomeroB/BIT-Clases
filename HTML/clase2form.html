@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios2</title>
+</head>
+
+<body>
+ <H1>Formulario de contacto</H1> 
+ 
+ <form action="enviar"() method="post"><!--post envia la info, get la recibe-->
+    <label for="nombre">Nombre del estudiante:</label>
+    <input type="text" id="nombre" name="nombre">
+
+    <label fro="email">Correo del estudiante:</label>
+    <input type="text" id="email" name="email">
+
+    <label for="mensaje">Sugerencia:</label>
+    <textarea name="mensaje" id="mensaje" rows="5" required></textarea>
+    <!--required no permite enviar sin el cuadro completo-->
+
+    <button type="submit">Aceptar</button>
+
+ </form>
+
+</body>
+</html>

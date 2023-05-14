@@ -1,0 +1,22 @@
+body{ 
+    background-color: #E98D79;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1{ 
+    color: rgb(74, 34, 112);
+    font-size: 36px;
+}
+
+p{ 
+    color: rgb(43, 114, 114);
+    font-size: 16px;
+}
+
+header{ 
+    background-color: #be6652;
+}
+
+header h1{ 
+    margin: 20px;
+}
