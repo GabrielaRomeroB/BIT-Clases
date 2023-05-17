@@ -1,0 +1,9 @@
+.destacado{
+    color:blueviolet;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.oculto{
+    display: none;
+}
