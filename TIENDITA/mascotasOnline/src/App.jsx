@@ -1,4 +1,6 @@
 import{ useRoutes, BrowserRouter} from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
 import './App.css'
 import Home from './pages/Home'
 import MyAccount from './pages/MyAccount'
@@ -26,8 +28,12 @@ function App() {
   return (
    <div>
     <BrowserRouter>
-    <AppRoutes/>
-    <NavBar/>
+      <div className='principalContainer'>
+        <NavBar/>
+      </div>
+      <div className='containerViews'>
+        <AppRoutes/>
+      </div>
     </BrowserRouter>
    </div>
   )
